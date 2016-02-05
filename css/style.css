@@ -7,7 +7,7 @@ body {
 }
 
 body { 
-    font-family: "OpenSans", sans-serif;
+    font-family: "OpenSansRegular", sans-serif;
     color: #2d2d2f; /* text color */
     text-align: center;
     line-height: 1.25;
@@ -25,6 +25,31 @@ img {
 
 a.text-link:hover {
     text-decoration: underline;
+}
+
+
+@font-face {
+    font-family: "OpenSansBold";
+    src: url("opensans-bold-webfont.eot");
+    src: url("opensans-bold-webfont.eot?#iefix") format("embedded-opentype"),
+         url("opensans-bold-webfont.woff2") format("woff2"),
+         url("opensans-bold-webfont.woff") format("woff"),
+         url("opensans-bold-webfont.ttf") format("truetype"),
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: "OpenSansRegular";
+    src: url("opensans-regular-webfont.eot");
+    src: url("opensans-regular-webfont.eot?#iefix") format("embedded-opentype"),
+         url("opensans-regular-webfont.woff2") format("woff2"),
+         url("opensans-regular-webfont.woff") format("woff"),
+         url("opensans-regular-webfont.ttf") format("truetype"),
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 .wrapper {
@@ -57,9 +82,8 @@ a.text-link:hover {
 
 .main-heading {
     color: #fff; /* text color */
-    font-family: "OpenSans", sans-serif;
+    font-family: "OpenSansBold", sans-serif;
     font-size: 64px;
-    font-weight: bold;
     margin: 90px auto 50px auto;
     max-width: 940px;
 }
@@ -71,11 +95,12 @@ a.text-link:hover {
     color: #fff;
     display: block;
     margin: 0 auto;
+    font-family: "OpenSansBold", sans-serif;
     font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
     line-height: 60px;
-      -webkit-transition: 200ms;
+    -webkit-transition: 200ms;
     -moz-transition: 200ms;
     -ms-transition: 200ms;
     -o-transition: 200ms;
@@ -84,10 +109,10 @@ a.text-link:hover {
 
 .trade-btn:hover {
     -webkit-transform: scale(1.05);
-       -moz-transform: scale(1.05);
-        -ms-transform: scale(1.05);
-         -o-transform: scale(1.05);
-            transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .slide.questions {
@@ -98,8 +123,8 @@ a.text-link:hover {
 }
 
 .heading {
+    font-family: "OpenSansBold", sans-serif;
     font-size: 60px;
-    font-weight: bold;
     text-transform: uppercase;
     margin: 0;
     padding: 80px 0 40px 0;
@@ -110,7 +135,7 @@ a.text-link:hover {
 }
 
 .small-wrapper {
-   font-size: 0px; 
+    font-size: 0px; 
 }
 
 .inline-block {
@@ -129,8 +154,9 @@ a.text-link:hover {
 }
 
 p.text-heading {
-    font-size: 24px;
+    font-family: "OpenSansBold", sans-serif;
     font-weight: bold;
+    font-size: 24px;
     text-transform: uppercase;
 }
 
@@ -154,7 +180,7 @@ p.text-heading {
 
 .info-block p {
     font-size: 12px;
-    margin-bottom: 35px;
+    margin: 0 0 30px 0;
     line-height: 1.5;
 }
 
@@ -173,7 +199,6 @@ p.text-heading {
 
 .left,
 .right {
-    line-height: 80px;
     margin: 0;
     width: 50%;
     display: inline-block;
@@ -182,10 +207,16 @@ p.text-heading {
 
 p.left {
     text-align: left;
+    line-height: 80px;
 }
 
 p.right {
     text-align: right;
+    margin-top: 30px;
+    vertical-align: top;
+}
+
+.right img {
 }
 
 @media (min-width: 1600px){
@@ -195,7 +226,7 @@ p.right {
 }
 
 @media (max-width: 640px){
-    
+
     .inline-block {
         width: auto;
         display: block;
