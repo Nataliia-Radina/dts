@@ -43,6 +43,7 @@ a {
 
 img {
     max-width: 100%;
+    border: none;
 }
 
 a.text-link:hover {
